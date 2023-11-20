@@ -6,6 +6,9 @@ function Chat({socket,username,room,contactName,product}) {
   const [currentMessage, setCurrentMessage] = useState("");
   const [messageList, setMessageList] = useState([]);
   socket.emit("join_room", room);
+  useEffect(() => {
+    // Your useEffect logic, if needed
+  }, []);
   const sendMessage = async () => {
     if (currentMessage !== "") {
       const messageData = {

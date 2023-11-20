@@ -61,7 +61,7 @@ const addBid = async (e) => {
         return;
       }
 // cant place bid if the bidder is same as seller
-      if(auction.seller==auction.loggedInUser)
+      if(auction.seller===auction.loggedInUser)
       {
         alert("You cant place bid on your own product!");
         setInput({price:""});
@@ -119,7 +119,7 @@ useEffect( () => {
             };
           });
         })
- },[])
+ },[productId, auction])
 
 // GET request for updating bidding data
 async function getSpace(){

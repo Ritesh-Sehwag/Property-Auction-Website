@@ -10,7 +10,7 @@ export default function HomeAuctions({str}) {
         setProducts(data);
       };
       fetchdata();
-    }, []);
+    }, [str]);
     if(Object.keys(products).length > 0){
         return (
             <Content>
