@@ -22,11 +22,16 @@ On the first terminal :
 cd .\server\
 npm i
 npm start
+
+
 On the second terminal :
 
 cd .\client\ 
 npm i
 npm start
+
+
+
 On the third terminal :
 
 cd .\socket\ 
